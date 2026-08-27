@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mohommad Rehan Lone</title>
+<meta name="description" content="Mohommad Rehan Lone — photos, videos and social links.">
+<style>
+:root{--bg:#061a35;--blue:#18a8ff;--cyan:#68dcff;--text:#f5fbff;--muted:#a5c1da}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% 0%,#1687df 0,transparent 34%),linear-gradient(145deg,#061a35,#062d58 72%);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:30;width:min(760px,calc(100% - 24px));padding:11px 14px 11px 19px;display:flex;justify-content:space-between;align-items:center;border:1px solid #65caff20;background:#07172ad9;backdrop-filter:blur(18px);border-radius:999px;box-shadow:0 18px 50px #0007}
+.brand{font-weight:850;letter-spacing:.06em}.brand i{font-style:normal;color:var(--cyan)}
+.nav{display:flex;gap:5px}.nav a{padding:9px 12px;border-radius:999px;color:#c1d6e9;font-size:13px}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 18px 70px}.hero-inner{max-width:850px}
+.avatar{width:142px;height:142px;border-radius:50%;margin:0 auto 27px;overflow:hidden;border:2px solid #36b9ffaa;box-shadow:0 0 0 8px #1aa0ff0d,0 0 70px #1aa0ff44}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.25em;font-weight:850;color:var(--cyan);margin-bottom:13px}
+h1{margin:0;font-size:clamp(42px,8vw,88px);line-height:.92;letter-spacing:-.06em}
+.grad{background:linear-gradient(100deg,#fff,#89ddff,#1aa0ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:600px;margin:22px auto;color:var(--muted);font-size:17px;line-height:1.75}
+.socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.btn{padding:12px 18px;border:1px solid #67caff22;border-radius:999px;background:#0a2c52;font-size:14px}.btn.primary{background:var(--blue);border-color:var(--blue)}
+section{width:min(1100px,calc(100% - 34px));margin:auto;padding:80px 0}.title{margin-bottom:25px}.title h2{margin:0;font-size:35px;letter-spacing:-.04em}.title p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.photo{aspect-ratio:4/3;overflow:hidden;border-radius:18px;border:1px solid #61caff17;background:#0a2a51;cursor:pointer}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.45s}.photo:hover img{transform:scale(1.045)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.video-card{border:1px solid #61caff17;border-radius:20px;overflow:hidden;background:#071f3b}.video-card video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#06152a}.video-label{padding:12px 15px;color:#a8bfd4;font-size:13px}
+.links{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.link-card{padding:22px;border:1px solid #61caff17;border-radius:18px;background:#0a2d55}.link-card small{display:block;color:#7fa2c1;margin-bottom:5px}
+footer{text-align:center;padding:70px 18px;color:#7897b4;font-size:13px}
+.lightbox{position:fixed;inset:0;background:#000d;display:none;place-items:center;z-index:100;padding:24px}.lightbox.show{display:grid}.lightbox img{max-width:92vw;max-height:88vh;border-radius:16px}.close{position:absolute;top:20px;right:22px;font-size:30px;color:#fff;cursor:pointer;background:none;border:0}
+@media(max-width:720px){.nav a:nth-child(2){display:none}.gallery{grid-template-columns:1fr}.videos,.links{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><a class="brand" href="#top">MR<span><i>L</i></span></a><div class="nav"><a href="#photos">Photos</a><a href="#videos">Videos</a><a href="#socials">Socials</a></div></nav>
+
+<header id="top" class="hero"><div class="hero-inner">
+<div class="avatar"><img src="profile.jpg" alt="Mohommad Rehan Lone"></div>
+<div class="eyebrow">Welcome</div>
+<h1>Mohommad <span class="grad">Rehan Lone</span></h1>
+<p>My photos, videos and the places you can find me online — all in one place.</p>
+<div class="socials"><a class="btn primary" href="https://www.instagram.com/rehannlone/" target="_blank">Instagram</a><a class="btn" href="https://www.tiktok.com/@loansofloans" target="_blank">TikTok</a></div>
+</div></header>
+
+<section id="photos"><div class="title"><h2>Photos</h2><p>One clean gallery — no categories.</p></div><div id="photoGrid" class="gallery"></div></section>
+<section id="videos"><div class="title"><h2>Videos</h2><p>All clips in one place.</p></div><div id="videoGrid" class="videos"></div></section>
+<section id="socials"><div class="title"><h2>Socials</h2><p>Find me online.</p></div><div class="links">
+<a class="link-card" href="https://www.instagram.com/rehannlone/" target="_blank"><small>Instagram</small><strong>@rehannlone</strong></a>
+<a class="link-card" href="https://www.tiktok.com/@loansofloans" target="_blank"><small>TikTok</small><strong>@loansofloans</strong></a>
+</div></section>
+<footer>© 2026 Mohommad Rehan Lone</footer>
+
+<div id="lightbox" class="lightbox"><button class="close">×</button><img id="lightboxImg" alt="Expanded photo"></div>
+<script>
+const photos=["media/photos/1C048696-882A-4033-BFBD-D5B4C1BF8C48.jpg", "media/photos/1D27DB08-0165-4F2C-9FA4-32B38BEEFAAB.jpg", "media/photos/46c1707a-2c0f-49db-9b88-60ae01a39a00.jpg", "media/photos/E7EF41A9-9436-4C41-B691-BCA5B03B253A.jpg", "media/photos/IMG_0103.jpg", "media/photos/IMG_0233.jpg", "media/photos/IMG_1114.jpg", "media/photos/IMG_2121.jpg", "media/photos/IMG_2180.jpg", "media/photos/IMG_2892.jpg", "media/photos/IMG_2954.jpg", "media/photos/IMG_3513.jpg", "media/photos/IMG_3609.jpg", "media/photos/IMG_3737.jpg", "media/photos/IMG_3918.jpg", "media/photos/IMG_4307.jpg", "media/photos/IMG_4331.jpg", "media/photos/IMG_4596.jpg", "media/photos/IMG_5166.jpg", "media/photos/IMG_5170.jpg", "media/photos/IMG_5238.jpg", "media/photos/IMG_5259.jpg", "media/photos/IMG_5331.jpg", "media/photos/IMG_5362.jpg", "media/photos/IMG_5417.jpg", "media/photos/IMG_5420.jpg", "media/photos/IMG_5443.jpg", "media/photos/IMG_5489.jpg", "media/photos/IMG_5580.jpg", "media/photos/IMG_5588.jpg", "media/photos/IMG_5590.jpg", "media/photos/IMG_5926.jpg", "media/photos/IMG_5927.jpg", "media/photos/IMG_5928.jpg", "media/photos/IMG_5955.jpg", "media/photos/IMG_5965.jpg", "media/photos/IMG_5966.jpg", "media/photos/IMG_6011.jpg", "media/photos/IMG_6116.jpg", "media/photos/IMG_6126.jpg", "media/photos/IMG_6137.jpg", "media/photos/IMG_6142.jpg"];
+const videos=["media/videos/71A94C6D-0F82-462F-AAD4-0A58BF12F371.mp4", "media/videos/7394456D-C5EA-45BC-88BE-95751A5241B7.mp4", "media/videos/938A7D80-275C-4002-8C0F-1AA7C465ADF3.mp4", "media/videos/B348DB79-98E3-44C6-A039-527B218238BA.mp4", "media/videos/C8CAF097-33A8-40F9-929D-B70E50A6C5FD.mp4", "media/videos/IMG_0785.mp4", "media/videos/IMG_3339.mp4", "media/videos/IMG_3501.mp4", "media/videos/IMG_3668.mp4", "media/videos/IMG_3927.mp4", "media/videos/IMG_5192.mp4", "media/videos/IMG_5559.mp4"];
+const pg=document.getElementById('photoGrid'),vg=document.getElementById('videoGrid');
+photos.forEach(src=>{const d=document.createElement('div');d.className='photo';const i=document.createElement('img');i.loading='lazy';i.src=src;i.alt='Mohommad Rehan Lone photo';d.appendChild(i);d.onclick=()=>openBox(src);pg.appendChild(d)});
+videos.forEach(src=>{const d=document.createElement('div');d.className='video-card';d.innerHTML='<video controls playsinline preload="metadata" src="'+src+'"></video><div class="video-label">Video</div>';vg.appendChild(d)});
+function openBox(src){document.getElementById('lightboxImg').src=src;document.getElementById('lightbox').classList.add('show')}
+document.querySelector('.close').onclick=()=>document.getElementById('lightbox').classList.remove('show');
+document.getElementById('lightbox').onclick=e=>{if(e.target.id==='lightbox')e.currentTarget.classList.remove('show')};
+</script>
+</body></html>
